@@ -1,0 +1,10 @@
+2024-04-25T14:20:01.471 1017b1b ["-f", "TypeBasedRBTGenerator(3,[:size,:parent_color],[:size,:parent_color],6)", "Pair{SamplingEntropy{RBT},Float64}[SamplingEntropy{RBT}(1,200,MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(),BalanceInvariant(),OrderInvariant()]),0.01,true)=>0.01]", "3"]
+== Config ==
+TAG: test
+TypeBasedRBTGenerator(3, [:size, :parent_color], [:size, :parent_color], 6)
+Pair{SamplingEntropy{RBT}, Float64}[SamplingEntropy{RBT}(1, 200, MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(), BalanceInvariant(), OrderInvariant()]), 0.01, true) => 0.01]
+Epochs: 3
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...

@@ -1,0 +1,10 @@
+2024-04-25T14:53:41.789 a085f2f ["TypeBasedRBTGenerator(5,[:size,:parent_color,:last_callsite],[:size,:parent_color,:last_callsite],[:size,:parent_color,:last_callsite],6)", "Pair{SamplingEntropy{RBT},Float64}[SamplingEntropy{RBT}(2,200,MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(),BalanceInvariant(),OrderInvariant()]),0.0,true)=>0.03]", "2000"]
+== Config ==
+TAG: v21_the_nums
+TypeBasedRBTGenerator(5, [:size, :parent_color, :last_callsite], [:size, :parent_color, :last_callsite], [:size, :parent_color, :last_callsite], 6)
+Pair{SamplingEntropy{RBT}, Float64}[SamplingEntropy{RBT}(2, 200, MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(), BalanceInvariant(), OrderInvariant()]), 0.0, true) => 0.03]
+Epochs: 2000
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...

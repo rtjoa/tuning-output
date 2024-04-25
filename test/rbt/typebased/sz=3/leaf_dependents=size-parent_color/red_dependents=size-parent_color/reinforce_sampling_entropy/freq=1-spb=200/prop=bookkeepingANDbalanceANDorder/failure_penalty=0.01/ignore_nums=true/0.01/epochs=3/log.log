@@ -1,0 +1,18 @@
+2024-04-25T13:53:41.759 1017b1b ["-f", "TypeBasedRBTGenerator(3,[:size,:parent_color],[:size,:parent_color])", "Pair{SamplingEntropy{RBT},Float64}[SamplingEntropy{RBT}(1,200,MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(),BalanceInvariant(),OrderInvariant()]),0.01,true)=>0.01]", "3"]
+== Config ==
+TAG: test
+TypeBasedRBTGenerator(3, [:size, :parent_color], [:size, :parent_color])
+Pair{SamplingEntropy{RBT}, Float64}[SamplingEntropy{RBT}(1, 200, MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(), BalanceInvariant(), OrderInvariant()]), 0.01, true) => 0.01]
+Epochs: 3
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  3.264060657 seconds
+
+ADNodes of interest (initial):
+Dict("leaf%%2%Color.Red()" => 0.5, "leaf%%3%Color.Black()" => 0.5, "leaf%%1%Color.Black()" => 0.5, "red%%1%Color.Black()" => 0.5, "red%%2%Color.Black()" => 0.5, "red%%2%Color.Red()" => 0.5, "leaf%%2%Color.Black()" => 0.5, "red%%3%Color.Black()" => 0.5, "leaf%%1%Color.Red()" => 0.5, "red%%1%Color.Red()" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("leaf%%1%Color.Red()_before_sigmoid") => 0, Var("leaf%%1%Color.Black()_before_sigmoid") => 0, Var("leaf%%3%Color.Black()_before_sigmoid") => 0, Var("leaf%%2%Color.Black()_before_sigmoid") => 0, Var("red%%1%Color.Black()_before_sigmoid") => 0, Var("red%%3%Color.Black()_before_sigmoid") => 0, Var("red%%1%Color.Red()_before_sigmoid") => 0, Var("red%%2%Color.Red()_before_sigmoid") => 0, Var("red%%2%Color.Black()_before_sigmoid") => 0, Var("leaf%%2%Color.Red()_before_sigmoid") => 0)
+
