@@ -1,0 +1,10 @@
+2024-05-08T20:06:53.934 0df1b387 ["-f", "TypeBasedSTLCGenerator(3,2,[:size,:last_callsite],[:size,:last_callsite],2,6)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(1,50,STLCWellTyped(),:prob_equals,0.01)=>0.01]", "3"]
+== Config ==
+TAG: test
+TypeBasedSTLCGenerator(3, 2, [:size, :last_callsite], [:size, :last_callsite], 2, 6)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(1, 50, STLCWellTyped(), :prob_equals, 0.01) => 0.01]
+Epochs: 3
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...

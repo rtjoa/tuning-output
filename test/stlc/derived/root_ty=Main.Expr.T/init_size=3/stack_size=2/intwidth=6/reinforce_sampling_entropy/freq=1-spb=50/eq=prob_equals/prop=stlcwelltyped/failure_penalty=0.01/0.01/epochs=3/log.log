@@ -1,0 +1,10 @@
+2024-05-12T16:56:39.040 43eb5357 ["-f", "DerivedGenerator{STLC}(Main.Expr.T,3,2,6)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(1,50,STLCWellTyped(),:prob_equals,0.01)=>0.01]", "3"]
+== Config ==
+TAG: test
+DerivedGenerator{STLC}(Main.Expr.T, 3, 2, 6)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(1, 50, STLCWellTyped(), :prob_equals, 0.01) => 0.01]
+Epochs: 3
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...

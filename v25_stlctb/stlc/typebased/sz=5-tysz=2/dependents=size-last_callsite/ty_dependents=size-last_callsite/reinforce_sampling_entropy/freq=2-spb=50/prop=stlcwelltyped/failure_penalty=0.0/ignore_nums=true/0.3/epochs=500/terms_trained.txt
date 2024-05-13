@@ -1,0 +1,200 @@
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. a
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool. a
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool. w
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool. λy:(Bool -> Bool) -> Bool. λz:Bool. λw:Bool. λa:Bool. true
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. a
+λx:Bool. λy:Bool -> Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. w
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. z
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. y
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. true
+true true
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool. λa:Bool -> Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. z
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool -> Bool -> Bool. λw:Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool -> Bool. y
+λx:Bool. λy:Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool -> Bool. λz:Bool. λw:Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:(Bool -> Bool) -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:(Bool -> Bool) -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. w
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. true
+λx:(Bool -> Bool) -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:(Bool -> Bool) -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. z
+λx:(Bool -> Bool) -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. w
+λx:(Bool -> Bool) -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool. λy:Bool. y
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. y
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. y
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool. λy:(Bool -> Bool) -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool. λa:(Bool -> Bool) -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool. λy:Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool. a
+λx:(Bool -> Bool) -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. y
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. y
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool. λz:Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. w true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool. λa:(Bool -> Bool) -> Bool. a
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool. λz:(Bool -> Bool) -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool. true
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:(Bool -> Bool) -> Bool. true
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool. λa:Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. λa:Bool. true
+λx:Bool. λy:Bool -> Bool. λz:Bool. λw:Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool. a
+λx:Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool. λy:(Bool -> Bool) -> Bool. λz:Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. y
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. w
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool. λz:Bool -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. λa:Bool -> Bool -> Bool. true
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool. λa:Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool. λw:Bool -> Bool. w
+λx:Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool. λw:Bool. λa:Bool -> Bool -> Bool. a
+λx:(Bool -> Bool) -> Bool -> Bool. λy:(Bool -> Bool) -> Bool -> Bool. λz:Bool -> Bool -> Bool. λw:Bool -> Bool -> Bool. λa:Bool -> Bool -> Bool. a
+λx:Bool. λy:Bool -> Bool. λz:Bool. λw:Bool -> Bool -> Bool. true
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. true
+λx:Bool. λy:Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool -> Bool -> Bool. w
+λx:Bool -> Bool -> Bool. λy:(Bool -> Bool) -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:(Bool -> Bool) -> Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:Bool. λa:Bool -> Bool. a
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool -> Bool. z
+λx:Bool -> Bool -> Bool. λy:Bool -> Bool -> Bool. λz:Bool. λw:(Bool -> Bool) -> Bool -> Bool. w
+λx:Bool. λy:Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. λw:(Bool -> Bool) -> Bool. true
+λx:Bool. λy:(Bool -> Bool) -> Bool. λz:Bool -> Bool. λw:(Bool -> Bool) -> Bool -> Bool. λa:Bool -> Bool. a

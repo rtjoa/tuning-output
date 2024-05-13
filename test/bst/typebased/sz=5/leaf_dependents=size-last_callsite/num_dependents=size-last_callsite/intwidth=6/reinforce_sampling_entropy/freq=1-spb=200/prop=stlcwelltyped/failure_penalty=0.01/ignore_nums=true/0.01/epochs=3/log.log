@@ -1,0 +1,9 @@
+2024-05-01T22:42:51.086 339fd253 ["-f", "TypeBasedBSTGenerator(5,[:size,:last_callsite],[:size,:last_callsite],6)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(1,200,STLCWellTyped(),0.01,true)=>0.01]", "3"]
+== Config ==
+TAG: test
+TypeBasedBSTGenerator(5, [:size, :last_callsite], [:size, :last_callsite], 6)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(1, 200, STLCWellTyped(), 0.01, true) => 0.01]
+Epochs: 3
+DistNat: DistUInt32
+SEED: 0
+
