@@ -1,0 +1,13 @@
+2024-05-14T20:01:33.213 66d24283 ["-f", "DerivedGenerator{STLC}(Main.Expr.T,Dict{Type,Integer}(Main.Typ.T=>1,Main.Expr.T=>2),2,6)", "Pair{MLELossConfig{STLC},Float64}[MLELossConfig{STLC}(NumApps(),Linear())=>0.5]", "10"]
+== Config ==
+TAG: test2
+DerivedGenerator{STLC}(Main.Expr.T, Dict{Type, Integer}(Main.Typ.T => 1, Main.Expr.T => 2), 2, 6)
+Pair{MLELossConfig{STLC}, Float64}[MLELossConfig{STLC}(NumApps(), Linear()) => 0.5]
+Epochs: 10
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  6.291481105 seconds
+
+Building computation graph for MLELossConfig{STLC}(NumApps(), Linear())...

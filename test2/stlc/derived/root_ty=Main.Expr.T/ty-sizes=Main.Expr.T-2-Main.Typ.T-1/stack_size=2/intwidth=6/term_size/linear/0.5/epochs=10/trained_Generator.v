@@ -1,0 +1,845 @@
+From QuickChick Require Import QuickChick. Import QcNotation.
+From Coq Require Import Bool ZArith List. Import ListNotations.
+From ExtLib Require Import Monad.
+From ExtLib.Data.Monads Require Import OptionMonad.
+Import MonadNotation.
+
+From STLC Require Import Impl Spec.
+Inductive Typ_leaf_ctor : Type :=
+  | Ctor_leaf_TBool : Typ_leaf_ctor.
+
+Inductive Expr_leaf_ctor : Type :=
+  | Ctor_leaf_Var : Expr_leaf_ctor
+  | Ctor_leaf_Bool : Expr_leaf_ctor.
+
+Inductive Typ_ctor : Type :=
+  | Ctor_TBool : Typ_ctor
+  | Ctor_TFun : Typ_ctor.
+
+Inductive Expr_ctor : Type :=
+  | Ctor_Var : Expr_ctor
+  | Ctor_Bool : Expr_ctor
+  | Ctor_Abs : Expr_ctor
+  | Ctor_App : Expr_ctor.
+
+Definition gen_leaf_Typ (chosen_ctor : Typ_leaf_ctor) (stack1 : nat) (stack2 : nat) : G Typ :=
+  match chosen_ctor with
+  | Ctor_leaf_TBool =>
+    returnGen (TBool )
+  end.
+
+Definition gen_leaf_Expr (chosen_ctor : Expr_leaf_ctor) (stack1 : nat) (stack2 : nat) : G Expr :=
+  match chosen_ctor with
+  | Ctor_leaf_Var =>
+    let weight_1 :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_1, returnGen 1);
+      (1000-weight_1, returnGen 0)
+    ]) (fun n1 : nat =>
+    let weight_2 :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_2, returnGen 2);
+      (1000-weight_2, returnGen 0)
+    ]) (fun n2 : nat =>
+    let weight_4 :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_4, returnGen 4);
+      (1000-weight_4, returnGen 0)
+    ]) (fun n4 : nat =>
+    let weight_8 :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_8, returnGen 8);
+      (1000-weight_8, returnGen 0)
+    ]) (fun n8 : nat =>
+    let weight_16 :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_16, returnGen 16);
+      (1000-weight_16, returnGen 0)
+    ]) (fun n16 : nat =>
+    let weight_32 :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_32, returnGen 32);
+      (1000-weight_32, returnGen 0)
+    ]) (fun n32 : nat =>
+    let p1 := n1 + n2 + n4 + n8 + n16 + n32 in 
+    returnGen (Var p1)))))))
+  | Ctor_leaf_Bool =>
+    let weight_true :=
+    match ((stack1 : nat), (stack2 : nat)) with 
+    | (4, 4) => 500
+    | (4, 5) => 500
+    | (4, 6) => 500
+    | (5, 4) => 500
+    | (5, 5) => 500
+    | (5, 6) => 500
+    | (6, 4) => 500
+    | (6, 5) => 500
+    | (6, 6) => 500
+    | _ => 500
+    end
+    in
+    bindGen (freq [
+      (weight_true, returnGen true);
+      (1000-weight_true, returnGen false)
+    ]) (fun p1 : bool =>
+    returnGen (Bool p1))
+  end.
+
+Fixpoint gen_Typ (chosen_ctor : Typ_ctor) (size : nat) (stack1 : nat) (stack2 : nat) : G Typ :=
+  match size with
+  | 0 =>
+    match chosen_ctor with
+    | Ctor_TBool =>
+      returnGen (TBool )
+    | Ctor_TFun =>
+      bindGen (gen_leaf_Typparam1_ctor (stack2 : nat) 1)
+      (fun p1 : Typ =>
+      bindGen (gen_leaf_Typparam2_ctor (stack2 : nat) 2)
+      (fun p2 : Typ =>
+      returnGen (TFun p1 p2)))
+    end
+    | S size' =>
+      match chosen_ctor with
+      | Ctor_TBool =>
+        returnGen (TBool )
+      | Ctor_TFun =>
+        bindGen (freq [
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (1, (0, 3)) => 500
+            | (1, (4, 3)) => 500
+            | (1, (5, 3)) => 500
+            | (1, (6, 3)) => 500
+            | _ => 500
+            end,
+            (Ctor_TBool, Ctor_TBool)
+          );
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (1, (0, 3)) => 500
+            | (1, (4, 3)) => 500
+            | (1, (5, 3)) => 500
+            | (1, (6, 3)) => 500
+            | _ => 500
+            end,
+            (Ctor_TFun, Ctor_TBool)
+          );
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (1, (0, 3)) => 500
+            | (1, (4, 3)) => 500
+            | (1, (5, 3)) => 500
+            | (1, (6, 3)) => 500
+            | _ => 500
+            end,
+            (Ctor_TBool, Ctor_TFun)
+          );
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (1, (0, 3)) => 500
+            | (1, (4, 3)) => 500
+            | (1, (5, 3)) => 500
+            | (1, (6, 3)) => 500
+            | _ => 500
+            end,
+            (Ctor_TFun, Ctor_TFun)
+          );
+        ]) (fun param_variantis =>
+        let '(param1_ctor, param2_ctor) := param_variantis in
+        bindGen (gen_Typparam1_ctor size' (stack2 : nat) 1)
+        (fun p1 : Typ =>
+        bindGen (gen_Typparam2_ctor size' (stack2 : nat) 2)
+        (fun p2 : Typ =>
+        returnGen (TFun p1 p2))))
+      end
+      end.
+
+  Fixpoint gen_Expr (chosen_ctor : Expr_ctor) (size : nat) (stack1 : nat) (stack2 : nat) : G Expr :=
+    match size with
+    | 0 =>
+      match chosen_ctor with
+      | Ctor_Var =>
+        let weight_1 :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_1, returnGen 1);
+          (1000-weight_1, returnGen 0)
+        ]) (fun n1 : nat =>
+        let weight_2 :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_2, returnGen 2);
+          (1000-weight_2, returnGen 0)
+        ]) (fun n2 : nat =>
+        let weight_4 :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_4, returnGen 4);
+          (1000-weight_4, returnGen 0)
+        ]) (fun n4 : nat =>
+        let weight_8 :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_8, returnGen 8);
+          (1000-weight_8, returnGen 0)
+        ]) (fun n8 : nat =>
+        let weight_16 :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_16, returnGen 16);
+          (1000-weight_16, returnGen 0)
+        ]) (fun n16 : nat =>
+        let weight_32 :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_32, returnGen 32);
+          (1000-weight_32, returnGen 0)
+        ]) (fun n32 : nat =>
+        let p1 := n1 + n2 + n4 + n8 + n16 + n32 in 
+        returnGen (Var p1)))))))
+      | Ctor_Bool =>
+        let weight_true :=
+        match (size, ((stack1 : nat), (stack2 : nat))) with 
+        | (0, (4, 4)) => 500
+        | (0, (4, 5)) => 500
+        | (0, (4, 6)) => 500
+        | (0, (5, 4)) => 500
+        | (0, (5, 5)) => 500
+        | (0, (5, 6)) => 500
+        | (0, (6, 4)) => 500
+        | (0, (6, 5)) => 500
+        | (0, (6, 6)) => 500
+        | _ => 500
+        end
+        in
+        bindGen (freq [
+          (weight_true, returnGen true);
+          (1000-weight_true, returnGen false)
+        ]) (fun p1 : bool =>
+        returnGen (Bool p1))
+      | Ctor_Abs =>
+        bindGen (freq [
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (0, (4, 4)) => 500
+            | (0, (4, 5)) => 500
+            | (0, (4, 6)) => 500
+            | (0, (5, 4)) => 500
+            | (0, (5, 5)) => 500
+            | (0, (5, 6)) => 500
+            | (0, (6, 4)) => 500
+            | (0, (6, 5)) => 500
+            | (0, (6, 6)) => 500
+            | _ => 500
+            end,
+            (Ctor_TBool, Ctor_leaf_Var)
+          );
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (0, (4, 4)) => 500
+            | (0, (4, 5)) => 500
+            | (0, (4, 6)) => 500
+            | (0, (5, 4)) => 500
+            | (0, (5, 5)) => 500
+            | (0, (5, 6)) => 500
+            | (0, (6, 4)) => 500
+            | (0, (6, 5)) => 500
+            | (0, (6, 6)) => 500
+            | _ => 500
+            end,
+            (Ctor_TFun, Ctor_leaf_Var)
+          );
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (0, (4, 4)) => 500
+            | (0, (4, 5)) => 500
+            | (0, (4, 6)) => 500
+            | (0, (5, 4)) => 500
+            | (0, (5, 5)) => 500
+            | (0, (5, 6)) => 500
+            | (0, (6, 4)) => 500
+            | (0, (6, 5)) => 500
+            | (0, (6, 6)) => 500
+            | _ => 500
+            end,
+            (Ctor_TBool, Ctor_leaf_Bool)
+          );
+          (
+            match (size, ((stack1 : nat), (stack2 : nat))) with 
+            | (0, (4, 4)) => 500
+            | (0, (4, 5)) => 500
+            | (0, (4, 6)) => 500
+            | (0, (5, 4)) => 500
+            | (0, (5, 5)) => 500
+            | (0, (5, 6)) => 500
+            | (0, (6, 4)) => 500
+            | (0, (6, 5)) => 500
+            | (0, (6, 6)) => 500
+            | _ => 500
+            end,
+            (Ctor_TFun, Ctor_leaf_Bool)
+          );
+        ]) (fun param_variantis =>
+        let '(param1_ctor, param2_ctor) := param_variantis in
+        bindGen (gen_Typ 1 (stack2 : nat) 3)
+        (fun p1 : Typ =>
+        bindGen (gen_leaf_Exprparam2_ctor (stack2 : nat) 4)
+        (fun p2 : Expr =>
+        returnGen (Abs p1 p2))))
+      | Ctor_App =>
+        bindGen (gen_leaf_Exprparam1_ctor (stack2 : nat) 5)
+        (fun p1 : Expr =>
+        bindGen (gen_leaf_Exprparam2_ctor (stack2 : nat) 6)
+        (fun p2 : Expr =>
+        returnGen (App p1 p2)))
+      end
+      | S size' =>
+        match chosen_ctor with
+        | Ctor_Var =>
+          let weight_1 :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_1, returnGen 1);
+            (1000-weight_1, returnGen 0)
+          ]) (fun n1 : nat =>
+          let weight_2 :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_2, returnGen 2);
+            (1000-weight_2, returnGen 0)
+          ]) (fun n2 : nat =>
+          let weight_4 :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_4, returnGen 4);
+            (1000-weight_4, returnGen 0)
+          ]) (fun n4 : nat =>
+          let weight_8 :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_8, returnGen 8);
+            (1000-weight_8, returnGen 0)
+          ]) (fun n8 : nat =>
+          let weight_16 :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_16, returnGen 16);
+            (1000-weight_16, returnGen 0)
+          ]) (fun n16 : nat =>
+          let weight_32 :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_32, returnGen 32);
+            (1000-weight_32, returnGen 0)
+          ]) (fun n32 : nat =>
+          let p1 := n1 + n2 + n4 + n8 + n16 + n32 in 
+          returnGen (Var p1)))))))
+        | Ctor_Bool =>
+          let weight_true :=
+          match (size, ((stack1 : nat), (stack2 : nat))) with 
+          | (1, (0, 4)) => 500
+          | (1, (0, 5)) => 500
+          | (1, (0, 6)) => 500
+          | (2, (0, 0)) => 500
+          | _ => 500
+          end
+          in
+          bindGen (freq [
+            (weight_true, returnGen true);
+            (1000-weight_true, returnGen false)
+          ]) (fun p1 : bool =>
+          returnGen (Bool p1))
+        | Ctor_Abs =>
+          bindGen (freq [
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 485
+              | (1, (0, 5)) => 410
+              | (1, (0, 6)) => 410
+              | (2, (0, 0)) => 495
+              | _ => 500
+              end,
+              (Ctor_TBool, Ctor_Var)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 485
+              | (1, (0, 5)) => 410
+              | (1, (0, 6)) => 410
+              | (2, (0, 0)) => 495
+              | _ => 500
+              end,
+              (Ctor_TFun, Ctor_Var)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 485
+              | (1, (0, 5)) => 410
+              | (1, (0, 6)) => 410
+              | (2, (0, 0)) => 495
+              | _ => 500
+              end,
+              (Ctor_TBool, Ctor_Bool)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 485
+              | (1, (0, 5)) => 410
+              | (1, (0, 6)) => 410
+              | (2, (0, 0)) => 495
+              | _ => 500
+              end,
+              (Ctor_TFun, Ctor_Bool)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 510
+              | (1, (0, 5)) => 514
+              | (1, (0, 6)) => 514
+              | (2, (0, 0)) => 439
+              | _ => 500
+              end,
+              (Ctor_TBool, Ctor_Abs)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 510
+              | (1, (0, 5)) => 514
+              | (1, (0, 6)) => 514
+              | (2, (0, 0)) => 439
+              | _ => 500
+              end,
+              (Ctor_TFun, Ctor_Abs)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 520
+              | (1, (0, 5)) => 643
+              | (1, (0, 6)) => 643
+              | (2, (0, 0)) => 584
+              | _ => 500
+              end,
+              (Ctor_TBool, Ctor_App)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 520
+              | (1, (0, 5)) => 643
+              | (1, (0, 6)) => 643
+              | (2, (0, 0)) => 584
+              | _ => 500
+              end,
+              (Ctor_TFun, Ctor_App)
+            );
+          ]) (fun param_variantis =>
+          let '(param1_ctor, param2_ctor) := param_variantis in
+          bindGen (gen_Typ 1 (stack2 : nat) 3)
+          (fun p1 : Typ =>
+          bindGen (gen_Exprparam2_ctor size' (stack2 : nat) 4)
+          (fun p2 : Expr =>
+          returnGen (Abs p1 p2))))
+        | Ctor_App =>
+          bindGen (freq [
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 486
+              | (1, (0, 5)) => 65
+              | (1, (0, 6)) => 65
+              | (2, (0, 0)) => 10
+              | _ => 500
+              end,
+              (Ctor_Var, Ctor_Var)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 486
+              | (1, (0, 5)) => 65
+              | (1, (0, 6)) => 65
+              | (2, (0, 0)) => 10
+              | _ => 500
+              end,
+              (Ctor_Bool, Ctor_Var)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 492
+              | (1, (0, 5)) => 60
+              | (1, (0, 6)) => 60
+              | (2, (0, 0)) => 28
+              | _ => 500
+              end,
+              (Ctor_Abs, Ctor_Var)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 497
+              | (1, (0, 5)) => 80
+              | (1, (0, 6)) => 80
+              | (2, (0, 0)) => 44
+              | _ => 500
+              end,
+              (Ctor_App, Ctor_Var)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 486
+              | (1, (0, 5)) => 65
+              | (1, (0, 6)) => 65
+              | (2, (0, 0)) => 10
+              | _ => 500
+              end,
+              (Ctor_Var, Ctor_Bool)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 486
+              | (1, (0, 5)) => 65
+              | (1, (0, 6)) => 65
+              | (2, (0, 0)) => 10
+              | _ => 500
+              end,
+              (Ctor_Bool, Ctor_Bool)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 492
+              | (1, (0, 5)) => 60
+              | (1, (0, 6)) => 60
+              | (2, (0, 0)) => 28
+              | _ => 500
+              end,
+              (Ctor_Abs, Ctor_Bool)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 497
+              | (1, (0, 5)) => 80
+              | (1, (0, 6)) => 80
+              | (2, (0, 0)) => 44
+              | _ => 500
+              end,
+              (Ctor_App, Ctor_Bool)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 492
+              | (1, (0, 5)) => 60
+              | (1, (0, 6)) => 60
+              | (2, (0, 0)) => 28
+              | _ => 500
+              end,
+              (Ctor_Var, Ctor_Abs)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 492
+              | (1, (0, 5)) => 60
+              | (1, (0, 6)) => 60
+              | (2, (0, 0)) => 28
+              | _ => 500
+              end,
+              (Ctor_Bool, Ctor_Abs)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 497
+              | (1, (0, 5)) => 80
+              | (1, (0, 6)) => 80
+              | (2, (0, 0)) => 107
+              | _ => 500
+              end,
+              (Ctor_Abs, Ctor_Abs)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 524
+              | (1, (0, 5)) => 324
+              | (1, (0, 6)) => 324
+              | (2, (0, 0)) => 66
+              | _ => 500
+              end,
+              (Ctor_App, Ctor_Abs)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 497
+              | (1, (0, 5)) => 80
+              | (1, (0, 6)) => 80
+              | (2, (0, 0)) => 44
+              | _ => 500
+              end,
+              (Ctor_Var, Ctor_App)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 497
+              | (1, (0, 5)) => 80
+              | (1, (0, 6)) => 80
+              | (2, (0, 0)) => 44
+              | _ => 500
+              end,
+              (Ctor_Bool, Ctor_App)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 524
+              | (1, (0, 5)) => 324
+              | (1, (0, 6)) => 324
+              | (2, (0, 0)) => 66
+              | _ => 500
+              end,
+              (Ctor_Abs, Ctor_App)
+            );
+            (
+              match (size, ((stack1 : nat), (stack2 : nat))) with 
+              | (1, (0, 4)) => 552
+              | (1, (0, 5)) => 999
+              | (1, (0, 6)) => 999
+              | (2, (0, 0)) => 1000
+              | _ => 500
+              end,
+              (Ctor_App, Ctor_App)
+            );
+          ]) (fun param_variantis =>
+          let '(param1_ctor, param2_ctor) := param_variantis in
+          bindGen (gen_Exprparam1_ctor size' (stack2 : nat) 5)
+          (fun p1 : Expr =>
+          bindGen (gen_Exprparam2_ctor size' (stack2 : nat) 6)
+          (fun p2 : Expr =>
+          returnGen (App p1 p2))))
+        end
+        end.
+
+    Definition gSized :=
+      bindGen (freq [
+        (
+          match (tt) with 
+          | (tt) => 3
+          end,
+          Ctor_Var
+        )
+        (
+          match (tt) with 
+          | (tt) => 3
+          end,
+          Ctor_Bool
+        )
+        (
+          match (tt) with 
+          | (tt) => 34
+          end,
+          Ctor_Abs
+        )
+        (
+          match (tt) with 
+          | (tt) => 1000
+          end,
+          Ctor_App
+        )
+      ]) (fun init_ctor =>
+      gen_Expr init_ctor 2 0 0.).
+
+      Definition test_prop_SinglePreserve :=
+forAll gSized (fun (e: Expr) =>
+  prop_SinglePreserve e).
+
+(*! QuickChick test_prop_SinglePreserve. *)
+
+Definition test_prop_MultiPreserve :=
+forAll gSized (fun (e: Expr) =>
+  prop_MultiPreserve e).
+
+(*! QuickChick test_prop_MultiPreserve. *)
+          
