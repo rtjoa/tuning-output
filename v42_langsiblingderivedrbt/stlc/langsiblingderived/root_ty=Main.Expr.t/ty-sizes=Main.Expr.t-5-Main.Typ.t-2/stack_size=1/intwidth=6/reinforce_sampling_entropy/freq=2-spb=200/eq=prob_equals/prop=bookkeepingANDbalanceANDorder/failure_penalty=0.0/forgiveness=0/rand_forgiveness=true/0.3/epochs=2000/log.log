@@ -1,0 +1,9 @@
+2024-05-28T21:28:58.964 5b203360 ["LangSiblingDerivedGenerator{STLC}(Main.Expr.t,Pair{Type,Integer}[Main.Expr.t=>5,Main.Typ.t=>2],1,6)", "Pair{SamplingEntropy{RBT},Float64}[SamplingEntropy{RBT}(2,200,MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(),BalanceInvariant(),OrderInvariant()]),:prob_equals,0.0,0,true)=>0.3]", "2000"]
+== Config ==
+TAG: v42_langsiblingderivedrbt
+LangSiblingDerivedGenerator{STLC}(Main.Expr.t, Pair{Type, Integer}[Main.Expr.t => 5, Main.Typ.t => 2], 1, 6)
+Pair{SamplingEntropy{RBT}, Float64}[SamplingEntropy{RBT}(2, 200, MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(), BalanceInvariant(), OrderInvariant()]), :prob_equals, 0.0, 0, true) => 0.3]
+Epochs: 2000
+DistNat: DistUInt32
+SEED: 0
+

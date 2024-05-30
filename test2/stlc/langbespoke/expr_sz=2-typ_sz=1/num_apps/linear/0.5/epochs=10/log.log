@@ -1,0 +1,46 @@
+2024-05-27T14:33:04.484 f3431cc5 ["-f", "LangBespokeSTLCGenerator(2,1)", "Pair{MLELossConfig{STLC},Float64}[MLELossConfig{STLC}(NumApps(),Linear())=>0.5]", "10"]
+== Config ==
+TAG: test2
+LangBespokeSTLCGenerator(2, 1)
+Pair{MLELossConfig{STLC}, Float64}[MLELossConfig{STLC}(NumApps(), Linear()) => 0.5]
+Epochs: 10
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  18.896642773 seconds
+
+Saving samples...
+Building computation graph for MLELossConfig{STLC}(NumApps(), Linear())...
+  2.467327451 seconds
+
+ADNodes of interest (initial):
+Dict("Backtrack1_var%%DistUInt32(1)" => 0.5, "Backtrack1_abs%%DistUInt32(2)" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack1_app%%DistUInt32(1)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.5, "Backtrack1_abs%%DistUInt32(1)" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_var%%DistUInt32(0)" => 0.5, "Frequency1_tfun%%DistUInt32(1)" => 0.5, "Backtrack1_app%%DistUInt32(2)" => 0.5, "Backtrack2_zero%%DistUInt32(0)" => 0.5, "Backtrack1_var%%DistUInt32(2)" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack1_abs%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack1_app%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack1_abs%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack1_app%%DistUInt32(2)_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0)
+
+Saving samples...
+Saved Coq generator to /space/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/initial_Generator.v
+
+Saving initial distribution...
+  0.056591129 seconds
+Saved metric dist to /space/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/loss1_dist_num_apps_initial.csv.
+
+
+ADNodes of interest (trained):
+Dict("Backtrack1_var%%DistUInt32(1)" => 0.42233953436223853, "Backtrack1_abs%%DistUInt32(2)" => 0.05911857095172027, "GenBool2_true%%" => 0.5, "Backtrack1_app%%DistUInt32(1)" => 0.7162023774743767, "Frequency1_tbool%%DistUInt32(1)" => 0.3879003227177955, "Backtrack1_abs%%DistUInt32(1)" => 0.3096036135258569, "GenBool1_true%%" => 0.5, "Backtrack2_var%%DistUInt32(0)" => 0.5, "Frequency1_tfun%%DistUInt32(1)" => 0.5937840229661345, "Backtrack1_app%%DistUInt32(2)" => 0.7993981736823615, "Backtrack2_zero%%DistUInt32(0)" => 0.5, "Backtrack1_var%%DistUInt32(2)" => 0.5)
+
+Parameter values (trained):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => -0.4561467342194807, Var("Backtrack1_var%%DistUInt32(2)_before_sigmoid") => -4.423544863740857e-17, Var("Backtrack1_abs%%DistUInt32(2)_before_sigmoid") => -2.7672720220299674, Var("Backtrack1_var%%DistUInt32(1)_before_sigmoid") => -0.3131766920467482, Var("Backtrack2_var%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack1_app%%DistUInt32(1)_before_sigmoid") => 0.9257013897238049, Var("Backtrack1_abs%%DistUInt32(1)_before_sigmoid") => -0.8019730925531006, Var("Backtrack1_app%%DistUInt32(2)_before_sigmoid") => 1.3825371819023493, Var("GenBool2_true%%_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0.37963067424776187)
+
+Saving samples...
+Saved Coq generator to /space/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/trained_Generator.v
+
+Saving trained distribution...
+  0.011744979 seconds
+Saved metric dist to /space/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/loss1_dist_num_apps_trained.csv.
+
+
+2024-05-27T14:33:45.486
+Total time elapsed: 41 seconds, 2 milliseconds

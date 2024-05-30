@@ -1,0 +1,16 @@
+2024-05-27T13:34:38.102 f3431cc5 ["-f", "LangBespokeSTLCGenerator(5,2)", "Pair{MLELossConfig{STLC},Float64}[MLELossConfig{STLC}(NumApps(),Linear())=>0.5]", "10"]
+== Config ==
+TAG: test2
+LangBespokeSTLCGenerator(5, 2)
+Pair{MLELossConfig{STLC}, Float64}[MLELossConfig{STLC}(NumApps(), Linear()) => 0.5]
+Epochs: 10
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  27.763294451 seconds
+
+Saving samples...
+Building computation graph for MLELossConfig{STLC}(NumApps(), Linear())...
+  138.422366424 seconds
+

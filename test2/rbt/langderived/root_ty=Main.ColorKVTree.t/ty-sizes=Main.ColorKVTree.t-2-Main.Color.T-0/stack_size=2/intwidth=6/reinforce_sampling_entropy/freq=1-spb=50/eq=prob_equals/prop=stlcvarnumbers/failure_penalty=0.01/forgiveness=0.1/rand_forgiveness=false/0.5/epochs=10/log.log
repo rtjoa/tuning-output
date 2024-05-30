@@ -1,0 +1,9 @@
+2024-05-27T23:15:12.789 22a5879c ["-f", "LangDerivedGenerator{RBT}(Main.ColorKVTree.t,Pair{Type,Integer}[Main.ColorKVTree.t=>2,Main.Color.T=>0],2,6)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(1,50,STLCVarNumbers(),:prob_equals,0.01,0.1,false)=>0.5]", "10"]
+== Config ==
+TAG: test2
+LangDerivedGenerator{RBT}(Main.ColorKVTree.t, Pair{Type, Integer}[Main.ColorKVTree.t => 2, Main.Color.T => 0], 2, 6)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(1, 50, STLCVarNumbers(), :prob_equals, 0.01, 0.1, false) => 0.5]
+Epochs: 10
+DistNat: DistUInt32
+SEED: 0
+

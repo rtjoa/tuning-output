@@ -1,0 +1,10 @@
+2024-05-27T22:10:27.113 6b7f4c25 ["-f", "LangDerivedGenerator{STLC}(Main.Expr.T,Pair{Type,Integer}[Main.Expr.T=>4,Main.Typ.T=>1],2,6)", "[ApproxSTLCConstructorEntropy()=>0.5]", "10"]
+== Config ==
+TAG: test2
+LangDerivedGenerator{STLC}(Main.Expr.T, Pair{Type, Integer}[Main.Expr.T => 4, Main.Typ.T => 1], 2, 6)
+[ApproxSTLCConstructorEntropy() => 0.5]
+Epochs: 10
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
