@@ -26,20 +26,20 @@ Inductive LeafCtorTyp :=
 Inductive TupCtorExprCtorExpr :=
   | MkCtorExprCtorExpr : CtorExpr -> CtorExpr -> TupCtorExprCtorExpr.
 
+Inductive TupLeafCtorExprLeafCtorExpr :=
+  | MkLeafCtorExprLeafCtorExpr : LeafCtorExpr -> LeafCtorExpr -> TupLeafCtorExprLeafCtorExpr.
+
 Inductive TupCtorTypLeafCtorExpr :=
   | MkCtorTypLeafCtorExpr : CtorTyp -> LeafCtorExpr -> TupCtorTypLeafCtorExpr.
 
 Inductive TupCtorTypCtorExpr :=
   | MkCtorTypCtorExpr : CtorTyp -> CtorExpr -> TupCtorTypCtorExpr.
 
-Inductive TupLeafCtorTypLeafCtorTyp :=
-  | MkLeafCtorTypLeafCtorTyp : LeafCtorTyp -> LeafCtorTyp -> TupLeafCtorTypLeafCtorTyp.
-
 Inductive TupCtorTypCtorTyp :=
   | MkCtorTypCtorTyp : CtorTyp -> CtorTyp -> TupCtorTypCtorTyp.
 
-Inductive TupLeafCtorExprLeafCtorExpr :=
-  | MkLeafCtorExprLeafCtorExpr : LeafCtorExpr -> LeafCtorExpr -> TupLeafCtorExprLeafCtorExpr.
+Inductive TupLeafCtorTypLeafCtorTyp :=
+  | MkLeafCtorTypLeafCtorTyp : LeafCtorTyp -> LeafCtorTyp -> TupLeafCtorTypLeafCtorTyp.
 
 Definition genLeafTyp (chosen_ctor : LeafCtorTyp) (stack1 : nat) (stack2 : nat) : G (Typ) :=
   match chosen_ctor with
