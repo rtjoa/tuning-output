@@ -1,0 +1,11 @@
+2024-06-09T23:42:45.701 a70bd5a8 ["LangDerivedGenerator{STLC}(Main.Expr.t,Pair{Type,Integer}[Main.Expr.t=>5,Main.Typ.t=>2],2,3,false)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(2,200,STLCMayType(),:prob_equals,0.0,0,true)=>0.3]", "2000", "0.1"]
+== Config ==
+TAG: boundtest
+LangDerivedGenerator{STLC}(Main.Expr.t, Pair{Type, Integer}[Main.Expr.t => 5, Main.Typ.t => 2], 2, 3, false)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(2, 200, STLCMayType(), :prob_equals, 0.0, 0, true) => 0.3]
+Epochs: 2000
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...

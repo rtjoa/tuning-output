@@ -1,0 +1,200 @@
+(λx:Bool. false) badvar_0
+badvar_-7
+badvar_-4
+badvar_-1
+(λx:(Bool -> Bool) -> Bool. λy:Bool. badvar_-2) (λx:(Bool -> Bool) -> Bool -> Bool. badvar_-1)
+λx:Bool. λy:Bool. true
+λx:Bool -> Bool. (λy:Bool -> Bool. λz:Bool. false badvar_-2) (λy:Bool. false badvar_-3)
+badvar_-2
+badvar_-4
+λx:Bool -> Bool -> Bool. true
+(λx:Bool. badvar_-6) ((λx:(Bool -> Bool) -> Bool. true) badvar_-7) false
+λx:Bool. λy:Bool. false
+true
+λx:Bool. false
+λx:Bool. badvar_-5
+λx:Bool. false
+(λx:Bool. true) badvar_-6
+badvar_-5
+true
+λx:Bool. false
+true
+badvar_-1
+λx:Bool -> Bool. false
+λx:Bool -> Bool -> Bool. badvar_-2
+false
+false
+true
+true
+(λx:Bool. (λy:Bool -> Bool. badvar_-1) (λy:Bool -> Bool. badvar_-1) (false false false)) (λx:Bool -> Bool -> Bool. badvar_-2)
+λx:Bool. false
+badvar_-1 (badvar_0 (λx:Bool -> Bool. badvar_-6))
+λx:Bool -> Bool. λy:Bool -> Bool. badvar_0
+false
+true
+true
+badvar_-6
+λx:Bool -> Bool -> Bool. badvar_-1
+false
+(λx:Bool. badvar_-4) badvar_0 (λx:Bool. λy:(Bool -> Bool) -> Bool -> Bool. false) (λx:(Bool -> Bool) -> Bool -> Bool. (λy:Bool -> Bool -> Bool. y) false)
+badvar_-6
+badvar_-2 (λx:Bool. false) ((λx:(Bool -> Bool) -> Bool. true) badvar_0 false) (λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool. λz:Bool -> Bool -> Bool. true)
+λx:Bool. λy:Bool. badvar_-2 badvar_-3
+true (λx:(Bool -> Bool) -> Bool. false)
+λx:Bool -> Bool. badvar_-4
+true
+false
+false (λx:Bool -> Bool -> Bool. false)
+badvar_-3 (true false (badvar_-6 badvar_-3))
+λx:Bool -> Bool. λy:Bool -> Bool. badvar_0
+λx:Bool. false (λy:(Bool -> Bool) -> Bool. badvar_-5)
+(λx:Bool -> Bool -> Bool. λy:Bool -> Bool. λz:Bool. badvar_0) badvar_0
+λx:Bool. true
+false
+false
+λx:Bool. badvar_-6
+true
+badvar_-1
+true
+badvar_-7 (badvar_-2 true)
+true
+true
+badvar_-2
+true (λx:Bool -> Bool -> Bool. badvar_-6) (λx:Bool. false)
+true
+false
+badvar_-3
+(λx:Bool. badvar_0) badvar_-6 badvar_-6
+badvar_-1
+λx:(Bool -> Bool) -> Bool. false
+badvar_-7
+false
+badvar_-4
+λx:(Bool -> Bool) -> Bool -> Bool. badvar_-3
+(λx:Bool. (λy:(Bool -> Bool) -> Bool -> Bool. badvar_-3) badvar_-1 false) badvar_-2
+badvar_-1
+true ((λx:Bool. λy:(Bool -> Bool) -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. badvar_-1) (true badvar_-3))
+true
+badvar_-1
+badvar_-4
+λx:Bool. true
+λx:Bool. λy:Bool. false
+badvar_-4 (λx:Bool. false (badvar_-4 (false true)))
+badvar_-5
+badvar_-1
+badvar_-3 false
+false
+false
+(λx:Bool. false) (true (false badvar_-1)) true true
+λx:Bool. (λy:Bool -> Bool -> Bool. true badvar_-1) badvar_-3 ((λy:(Bool -> Bool) -> Bool -> Bool. λz:(Bool -> Bool) -> Bool -> Bool. y) true)
+(λx:Bool. λy:Bool -> Bool -> Bool. badvar_-4 x) (false (λx:Bool. λy:Bool. y)) (false true)
+false badvar_-5 true (false (λx:Bool. badvar_-6)) (λx:Bool -> Bool. badvar_-5 badvar_-1) true
+badvar_-6 badvar_-3
+badvar_-6
+true
+λx:Bool. λy:Bool -> Bool -> Bool. badvar_-3
+badvar_-6
+badvar_-5
+false
+false
+badvar_-5 true
+true
+λx:Bool -> Bool. true
+false
+λx:Bool. badvar_-2
+(λx:Bool -> Bool -> Bool. false) (λx:(Bool -> Bool) -> Bool -> Bool. badvar_-4)
+true
+badvar_-2 (badvar_-7 ((λx:(Bool -> Bool) -> Bool. x true) (λx:(Bool -> Bool) -> Bool -> Bool. false)))
+λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. badvar_0
+false
+false false
+true
+badvar_0
+true (λx:Bool. badvar_0 (badvar_-6 true (λy:Bool. false)))
+badvar_-2
+false (true (λx:Bool. λy:Bool. badvar_-5 false))
+false
+badvar_-4
+λx:(Bool -> Bool) -> Bool. badvar_-4
+true
+λx:Bool. badvar_-1 badvar_-2 (λy:Bool -> Bool. badvar_-3)
+badvar_-7 false
+badvar_-7
+false
+(λx:Bool. badvar_-4) badvar_-4
+true
+true
+badvar_-5
+λx:Bool -> Bool. badvar_-1 badvar_-5
+true
+λx:Bool. λy:Bool -> Bool -> Bool. badvar_-1
+true
+badvar_-4
+(λx:Bool. badvar_-4 (λy:Bool. false) x) badvar_-7
+badvar_-1
+λx:Bool. λy:(Bool -> Bool) -> Bool. false ((λz:Bool. true) badvar_0)
+badvar_-3
+badvar_-6
+false
+badvar_-4
+badvar_-7
+λx:(Bool -> Bool) -> Bool -> Bool. true (badvar_0 (false (λy:Bool. badvar_-1)))
+badvar_-7
+λx:(Bool -> Bool) -> Bool -> Bool. badvar_-1
+true
+true
+λx:(Bool -> Bool) -> Bool. x
+badvar_-1 (false badvar_-5) badvar_0
+badvar_0
+λx:Bool. false x badvar_-5
+λx:Bool. badvar_-5
+λx:Bool -> Bool -> Bool. false
+false
+λx:Bool. true
+badvar_0
+true (badvar_-6 false)
+false (badvar_-7 false)
+λx:(Bool -> Bool) -> Bool -> Bool. badvar_0
+badvar_0
+true
+λx:Bool -> Bool -> Bool. true (λy:(Bool -> Bool) -> Bool. y (λz:(Bool -> Bool) -> Bool -> Bool. x))
+badvar_-2
+badvar_-4
+λx:Bool -> Bool. true
+badvar_-4
+λx:Bool. badvar_-2
+λx:(Bool -> Bool) -> Bool. true
+badvar_-3
+true
+true
+λx:Bool. false
+badvar_-7
+λx:Bool. (λy:Bool. true) badvar_-1
+true badvar_-1 (λx:Bool. λy:Bool. true) badvar_-4 badvar_-4
+true (badvar_-7 (λx:(Bool -> Bool) -> Bool -> Bool. λy:Bool -> Bool -> Bool. y))
+λx:(Bool -> Bool) -> Bool. badvar_-6
+false
+λx:(Bool -> Bool) -> Bool -> Bool. true
+λx:Bool -> Bool. (λy:Bool -> Bool -> Bool. λz:Bool. true) (badvar_-5 badvar_-2)
+λx:Bool -> Bool. badvar_-2
+false
+false
+λx:Bool. false
+(λx:Bool. (λy:(Bool -> Bool) -> Bool. true) (λy:Bool. badvar_-4) (λy:(Bool -> Bool) -> Bool. badvar_0)) badvar_0
+λx:Bool. λy:Bool. (λz:Bool. true) badvar_-4 (true y)
+badvar_0
+true
+badvar_-4
+badvar_-4 true badvar_0
+badvar_-1 (λx:Bool. λy:Bool. badvar_-2)
+false
+false
+badvar_-7 badvar_-2
+(λx:Bool. false) (false (λx:Bool -> Bool. λy:Bool. true))
+(λx:(Bool -> Bool) -> Bool -> Bool. badvar_-1 false) false false
+badvar_-6
+true
+badvar_-2 (true (λx:Bool. λy:Bool. badvar_-5))
+λx:(Bool -> Bool) -> Bool -> Bool. badvar_-1
+λx:Bool -> Bool. badvar_-3
+λx:Bool. λy:Bool -> Bool -> Bool. λz:Bool. false

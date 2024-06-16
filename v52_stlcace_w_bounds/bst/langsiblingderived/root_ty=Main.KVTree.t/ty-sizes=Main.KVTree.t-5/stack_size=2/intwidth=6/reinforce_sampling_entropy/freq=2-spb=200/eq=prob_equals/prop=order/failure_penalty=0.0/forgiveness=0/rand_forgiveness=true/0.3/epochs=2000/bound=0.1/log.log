@@ -1,0 +1,11 @@
+2024-06-13T20:14:09.054 bc54e01a ["LangSiblingDerivedGenerator{BST}(Main.KVTree.t,Pair{Type,Integer}[Main.KVTree.t=>5],2,6)", "Pair{SamplingEntropy{BST},Float64}[SamplingEntropy{BST}(2,200,BSTOrderInvariant(),:prob_equals,0.0,0,true)=>0.3]", "2000", "0.1"]
+== Config ==
+TAG: v52_stlcace_w_bounds
+LangSiblingDerivedGenerator{BST}(Main.KVTree.t, Pair{Type, Integer}[Main.KVTree.t => 5], 2, 6)
+Pair{SamplingEntropy{BST}, Float64}[SamplingEntropy{BST}(2, 200, BSTOrderInvariant(), :prob_equals, 0.0, 0, true) => 0.3]
+Epochs: 2000
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
