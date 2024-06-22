@@ -1,0 +1,18 @@
+2024-06-22T08:02:57.238 e6177e78 ["LangBespokeSTLCGenerator(5,2)", "[ApproxSTLCConstructorEntropy()=>0.03]", "2000", "0.1"]
+== Config ==
+TAG: v59_repro
+LangBespokeSTLCGenerator(5, 2)
+[ApproxSTLCConstructorEntropy() => 0.03]
+Epochs: 2000
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  26.72358701 seconds
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/v59_repro/stlc/langbespoke/expr_sz=5-typ_sz=2/approx_entropy/0.03/epochs=2000/bound=0.1/terms_test.txt.
+  116.928964096 seconds
+
+Building computation graph for ApproxSTLCConstructorEntropy()...
