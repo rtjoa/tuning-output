@@ -1,0 +1,10 @@
+2024-07-09T23:42:16.792 dcebc814 ["LangSiblingDerivedGenerator{RBT}(Main.ColorKVTree.t,Pair{Type,Integer}[Main.ColorKVTree.t=>4,Main.Color.t=>0],2,3)", "[ApproxSTLCConstructorEntropy()=>0.3]", "2000", "0.0"]
+== Config ==
+TAG: v66_fig2_rbt
+LangSiblingDerivedGenerator{RBT}(Main.ColorKVTree.t, Pair{Type, Integer}[Main.ColorKVTree.t => 4, Main.Color.t => 0], 2, 3)
+[ApproxSTLCConstructorEntropy() => 0.3]
+Epochs: 2000
+Bound: 0.0
+DistNat: DistUInt32
+SEED: 0
+

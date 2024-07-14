@@ -1,0 +1,32 @@
+2024-07-09T09:19:05.202 f0b35b54 ["LangBespokeSTLCGenerator(5,2)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(2,50,TrueProperty{STLC}(),:prob_equals,0.0,0,true,:num_apps)=>0.03]", "200", "0.1"]
+== Config ==
+TAG: v63_ex_unif_stlc_entropy
+LangBespokeSTLCGenerator(5, 2)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(2, 50, TrueProperty{STLC}(), :prob_equals, 0.0, 0, true, :num_apps) => 0.03]
+Epochs: 200
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  31.899028553 seconds
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/v63_ex_unif_stlc_entropy/stlc/langbespoke/expr_sz=5-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.03/epochs=200/bound=0.1/terms_test.txt.
+  140.148041699 seconds
+
+ADNodes of interest (initial):
+Dict("Backtrack2_var%%DistUInt32(4)" => 0.5, "Backtrack2_abs%%DistUInt32(1)" => 0.5, "Backtrack2_app%%DistUInt32(5)" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack2_var%%DistUInt32(2)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.5, "Backtrack1_var%%DistUInt32(0)" => 0.5, "Backtrack2_app%%DistUInt32(2)" => 0.5, "Backtrack2_abs%%DistUInt32(4)" => 0.5, "Backtrack2_app%%DistUInt32(3)" => 0.5, "Backtrack2_app%%DistUInt32(4)" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_app%%DistUInt32(1)" => 0.5, "Frequency1_tfun%%DistUInt32(2)" => 0.5, "Backtrack2_abs%%DistUInt32(3)" => 0.5, "Frequency1_tbool%%DistUInt32(2)" => 0.5, "Backtrack2_var%%DistUInt32(3)" => 0.5, "Backtrack2_var%%DistUInt32(1)" => 0.5, "Backtrack2_abs%%DistUInt32(5)" => 0.5, "Frequency1_tfun%%DistUInt32(1)" => 0.5, "Backtrack1_zero%%DistUInt32(0)" => 0.5, "Backtrack2_abs%%DistUInt32(2)" => 0.5, "Backtrack2_var%%DistUInt32(5)" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_app%%DistUInt32(3)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(4)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(5)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(5)_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(2)_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(5)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(3)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(4)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(3)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(4)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 0)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/v63_ex_unif_stlc_entropy/stlc/langbespoke/expr_sz=5-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.03/epochs=200/bound=0.1/terms_initial.txt.
+  132.126010192 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/v63_ex_unif_stlc_entropy/stlc/langbespoke/expr_sz=5-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.03/epochs=200/bound=0.1/initial_Generator.v
+
+Taking 10000 metric samples true...
+  11610.510156088 seconds
+Dict{Metric{STLC}, Dict{Any, Any}}(NumApps() => Dict((true, 2) => 374, (true, 21) => 4, (true, 12) => 221, (true, 3) => 554, (true, 15) => 87, (true, 4) => 592, (true, 13) => 157, (true, 14) => 127, (true, 20) => 6, (true, 16) => 62, (true, 9) => 437, (true, 5) => 594, (true, 11) => 289, (true, 6) => 538, (true, 0) => 3874, (true, 22) => 2, (true, 19) => 12, (true, 1) => 627, (true, 7) => 556, (true, 17) => 46, (true, 18) => 34, (true, 8) => 437, (true, 10) => 370), TermSize() => Dict((true, 28) => 147, (true, 12) => 153, (true, 15) => 152, (true, 65) => 12, (true, 52) => 35, (true, 74) => 4, (true, 58) => 19, (true, 48) => 57, (true, 40) => 98, (true, 31) => 123, (true, 9) => 119, (true, 44) => 68, (true, 49) => 52, (true, 62) => 12, (true, 19) => 162, (true, 33) => 110, (true, 51) => 42, (true, 54) => 36, (true, 63) => 16, (true, 3) => 403, (true, 80) => 1, (true, 4) => 240, (true, 13) => 147, (true, 14) => 143, (true, 20) => 161, (true, 16) => 149, (true, 79) => 1, (true, 47) => 53, (true, 22) => 163, (true, 83) => 4, (true, 42) => 83, (true, 53) => 34, (true, 1) => 2526, (true, 37) => 91, (true, 26) => 149, (true, 17) => 184, (true, 18) => 154, (true, 8) => 94, (true, 64) => 8, (true, 27) => 132, (true, 10) => 101, (true, 2) => 945, (true, 24) => 122, (true, 72) => 8, (true, 50) => 50, (true, 59) => 18, (true, 34) => 114, (true, 93) => 1, (true, 73) => 1, (true, 76) => 4, (true, 66) => 11, (true, 45) => 63, (true, 67) => 10, (true, 71) => 12, (true, 6) => 151, (true, 32) => 123, (true, 25) => 161, (true, 7) => 89, (true, 77) => 1, (true, 38) => 107, (true, 39) => 91, (true, 84) => 1, (true, 30) => 132, (true, 21) => 166, (true, 60) => 28, (true, 70) => 11, (true, 85) => 1, (true, 82) => 1, (true, 57) => 26, (true, 55) => 25, (true, 35) => 110, (true, 56) => 29, (true, 5) => 196, (true, 36) => 123, (true, 68) => 8, (true, 11) => 109, (true, 69) => 6, (true, 43) => 64, (true, 46) => 73, (true, 41) => 71, (true, 23) => 145, (true, 29) => 129, (true, 61) => 22, (true, 75) => 4))

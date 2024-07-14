@@ -1,0 +1,56 @@
+2024-07-08T15:45:03.746 44bd0d36 ["-f", "LangBespokeSTLCGenerator(2,1)", "Pair{MLELossConfig{STLC},Float64}[MLELossConfig{STLC}(NumApps(),Linear())=>0.5]", "10", "0.1"]
+== Config ==
+TAG: test2
+LangBespokeSTLCGenerator(2, 1)
+Pair{MLELossConfig{STLC}, Float64}[MLELossConfig{STLC}(NumApps(), Linear()) => 0.5]
+Epochs: 10
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  20.76767096 seconds
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/terms_test.txt.
+  5.375006421 seconds
+
+Building computation graph for MLELossConfig{STLC}(NumApps(), Linear())...
+  2.590311165 seconds
+
+ADNodes of interest (initial):
+Dict("Backtrack2_abs%%DistUInt32(1)" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack2_var%%DistUInt32(2)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.5, "Backtrack1_var%%DistUInt32(0)" => 0.5, "Backtrack2_app%%DistUInt32(2)" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_app%%DistUInt32(1)" => 0.5, "Backtrack2_var%%DistUInt32(1)" => 0.5, "Frequency1_tfun%%DistUInt32(1)" => 0.5, "Backtrack1_zero%%DistUInt32(0)" => 0.5, "Backtrack2_abs%%DistUInt32(2)" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 0)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/terms_initial.txt.
+  0.242804308 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/initial_Generator.v
+
+Saving initial distribution...
+  0.04464296 seconds
+Saved metric dist to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/loss1_dist_num_apps_initial.csv.
+
+
+ADNodes of interest (trained):
+Dict("Backtrack2_abs%%DistUInt32(1)" => 0.2957700132182563, "GenBool2_true%%" => 0.5, "Backtrack2_var%%DistUInt32(2)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.3820391704480541, "Backtrack1_var%%DistUInt32(0)" => 0.5, "Backtrack2_app%%DistUInt32(2)" => 0.8039670021679058, "GenBool1_true%%" => 0.5, "Backtrack2_app%%DistUInt32(1)" => 0.7232130693123365, "Backtrack2_var%%DistUInt32(1)" => 0.4180865953841304, "Frequency1_tfun%%DistUInt32(1)" => 0.5978081981154048, "Backtrack1_zero%%DistUInt32(0)" => 0.5, "Backtrack2_abs%%DistUInt32(2)" => 0.10000000000000002)
+
+Parameter values (trained):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => -2.197224577336219, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => -0.4809019290573036, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0.39634086961565174, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => -0.8675228186313315, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => -0.3306330702818091, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0.9604558735145117, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => -4.8572257327350586e-17, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 1.4112752249106146)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/terms_trained.txt.
+  0.242663576 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/trained_Generator.v
+
+Saving trained distribution...
+  0.017187677 seconds
+Saved metric dist to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/num_apps/linear/0.5/epochs=10/bound=0.1/loss1_dist_num_apps_trained.csv.
+
+
+2024-07-08T15:45:56.764
+Total time elapsed: 53 seconds, 18 milliseconds

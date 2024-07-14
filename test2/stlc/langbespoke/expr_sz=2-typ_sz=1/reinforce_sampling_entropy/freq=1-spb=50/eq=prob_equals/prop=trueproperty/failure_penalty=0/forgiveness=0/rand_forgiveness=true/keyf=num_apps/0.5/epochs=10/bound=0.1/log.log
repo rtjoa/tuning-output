@@ -1,0 +1,51 @@
+2024-07-09T09:11:23.572 f0b35b54 ["-f", "LangBespokeSTLCGenerator(2,1)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(1,50,TrueProperty{STLC}(),:prob_equals,0,0,true,:num_apps)=>0.5]", "10", "0.1"]
+== Config ==
+TAG: test2
+LangBespokeSTLCGenerator(2, 1)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(1, 50, TrueProperty{STLC}(), :prob_equals, 0, 0, true, :num_apps) => 0.5]
+Epochs: 10
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  15.829186431 seconds
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/reinforce_sampling_entropy/freq=1-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.5/epochs=10/bound=0.1/terms_test.txt.
+  4.097484465 seconds
+
+ADNodes of interest (initial):
+Dict("Backtrack2_abs%%DistUInt32(1)" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack2_var%%DistUInt32(2)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.5, "Backtrack1_var%%DistUInt32(0)" => 0.5, "Backtrack2_app%%DistUInt32(2)" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_app%%DistUInt32(1)" => 0.5, "Backtrack2_var%%DistUInt32(1)" => 0.5, "Frequency1_tfun%%DistUInt32(1)" => 0.5, "Backtrack1_zero%%DistUInt32(0)" => 0.5, "Backtrack2_abs%%DistUInt32(2)" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 0)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/reinforce_sampling_entropy/freq=1-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.5/epochs=10/bound=0.1/terms_initial.txt.
+  0.27564606 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/reinforce_sampling_entropy/freq=1-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.5/epochs=10/bound=0.1/initial_Generator.v
+
+Taking 10000 metric samples true...
+  75.389458548 seconds
+Dict{Metric{STLC}, Dict{Any, Any}}(NumApps() => Dict((true, 2) => 2453, (true, 1) => 2070, (true, 3) => 1227, (true, 0) => 4250), TermSize() => Dict((true, 2) => 1683, (true, 12) => 467, (true, 13) => 309, (true, 4) => 317, (true, 14) => 64, (true, 9) => 928, (true, 5) => 1170, (true, 11) => 294, (true, 6) => 583, (true, 1) => 2567, (true, 7) => 311, (true, 8) => 978, (true, 10) => 329))
+
+ADNodes of interest (trained):
+Dict("Backtrack2_abs%%DistUInt32(1)" => 0.46537071823795856, "GenBool2_true%%" => 0.4753338378599232, "Backtrack2_var%%DistUInt32(2)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.5647876221683291, "Backtrack1_var%%DistUInt32(0)" => 0.5093987683622622, "Backtrack2_app%%DistUInt32(2)" => 0.7375129526780684, "GenBool1_true%%" => 0.7294336055005606, "Backtrack2_app%%DistUInt32(1)" => 0.5898818584045875, "Backtrack2_var%%DistUInt32(1)" => 0.4560987406295472, "Frequency1_tfun%%DistUInt32(1)" => 0.48685976109028944, "Backtrack1_zero%%DistUInt32(0)" => 0.4926791668125831, "Backtrack2_abs%%DistUInt32(2)" => 0.14338024096246832)
+
+Parameter values (trained):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => -1.7874940027250286, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0.26061563366846174, Var("GenBool1_true%%_before_sigmoid") => 0.9917508309306631, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => 0.03759950242838887, Var("GenBool2_true%%_before_sigmoid") => -0.09874480497324319, Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => -0.05257306130058259, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => -0.13873924394221895, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => -0.1760583993290283, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => -0.02928542559015404, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0.36347700843307484, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => 8.673617379884054e-18, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 1.0330819137343135)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/reinforce_sampling_entropy/freq=1-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.5/epochs=10/bound=0.1/terms_trained.txt.
+  0.188705711 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/test2/stlc/langbespoke/expr_sz=2-typ_sz=1/reinforce_sampling_entropy/freq=1-spb=50/eq=prob_equals/prop=trueproperty/failure_penalty=0/forgiveness=0/rand_forgiveness=true/keyf=num_apps/0.5/epochs=10/bound=0.1/trained_Generator.v
+
+Taking 10000 metric samples true...
+  63.878367322 seconds
+Dict{Metric{STLC}, Dict{Any, Any}}(NumApps() => Dict((true, 2) => 4121, (true, 1) => 1942, (true, 3) => 2598, (true, 0) => 1339), TermSize() => Dict((true, 2) => 446, (true, 12) => 982, (true, 4) => 493, (true, 13) => 556, (true, 14) => 120, (true, 9) => 1422, (true, 5) => 1115, (true, 11) => 721, (true, 6) => 334, (true, 1) => 893, (true, 7) => 639, (true, 8) => 1770, (true, 10) => 509))
+
+2024-07-09T09:14:27.914
+Total time elapsed: 3 minutes, 4 seconds, 342 milliseconds

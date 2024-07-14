@@ -1,0 +1,45 @@
+2024-06-23T16:46:07.843 057b790f ["-f", "LangBespokeSTLCGenerator(3,2)", "Pair{SamplingEntropy{STLC},Float64}[SamplingEntropy{STLC}(2,200,STLCWellTyped(),:prob_equals,0.0,0,true)=>0.03]", "10", "0.1"]
+== Config ==
+TAG: v58_stlc_bespoke_se
+LangBespokeSTLCGenerator(3, 2)
+Pair{SamplingEntropy{STLC}, Float64}[SamplingEntropy{STLC}(2, 200, STLCWellTyped(), :prob_equals, 0.0, 0, true) => 0.03]
+Epochs: 10
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  20.989189259 seconds
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/v58_stlc_bespoke_se/stlc/langbespoke/expr_sz=3-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=200/eq=prob_equals/prop=stlcwelltyped/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/0.03/epochs=10/bound=0.1/terms_test.txt.
+  7.797998558 seconds
+
+ADNodes of interest (initial):
+Dict("Backtrack2_abs%%DistUInt32(1)" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack2_var%%DistUInt32(2)" => 0.5, "Frequency1_tbool%%DistUInt32(1)" => 0.5, "Backtrack1_var%%DistUInt32(0)" => 0.5, "Backtrack2_app%%DistUInt32(2)" => 0.5, "Backtrack2_app%%DistUInt32(3)" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_app%%DistUInt32(1)" => 0.5, "Frequency1_tfun%%DistUInt32(2)" => 0.5, "Backtrack2_abs%%DistUInt32(3)" => 0.5, "Frequency1_tbool%%DistUInt32(2)" => 0.5, "Backtrack2_var%%DistUInt32(3)" => 0.5, "Backtrack2_var%%DistUInt32(1)" => 0.5, "Frequency1_tfun%%DistUInt32(1)" => 0.5, "Backtrack1_zero%%DistUInt32(0)" => 0.5, "Backtrack2_abs%%DistUInt32(2)" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(2)_before_sigmoid") => 0, Var("Frequency1_tfun%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(3)_before_sigmoid") => 0, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => 0, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(3)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(3)_before_sigmoid") => 0, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => 0, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => 0)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/v58_stlc_bespoke_se/stlc/langbespoke/expr_sz=3-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=200/eq=prob_equals/prop=stlcwelltyped/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/0.03/epochs=10/bound=0.1/terms_initial.txt.
+  3.323132318 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/v58_stlc_bespoke_se/stlc/langbespoke/expr_sz=3-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=200/eq=prob_equals/prop=stlcwelltyped/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/0.03/epochs=10/bound=0.1/initial_Generator.v
+
+
+ADNodes of interest (trained):
+Dict("Backtrack2_abs%%DistUInt32(1)" => 0.480279368856383, "GenBool2_true%%" => 0.5058141256822155, "Backtrack2_var%%DistUInt32(2)" => 0.4937282792631982, "Frequency1_tbool%%DistUInt32(1)" => 0.5044038613034747, "Backtrack1_var%%DistUInt32(0)" => 0.4939160787778401, "Backtrack2_app%%DistUInt32(2)" => 0.5576927163128279, "Backtrack2_app%%DistUInt32(3)" => 0.5677697576300867, "GenBool1_true%%" => 0.5002655724415634, "Backtrack2_app%%DistUInt32(1)" => 0.5210643997154839, "Frequency1_tfun%%DistUInt32(2)" => 0.5459698283288419, "Backtrack2_abs%%DistUInt32(3)" => 0.42304823562767, "Frequency1_tbool%%DistUInt32(2)" => 0.4500949883074712, "Backtrack2_var%%DistUInt32(3)" => 0.5, "Backtrack2_var%%DistUInt32(1)" => 0.49800618701159943, "Frequency1_tfun%%DistUInt32(1)" => 0.4956608779333801, "Backtrack1_zero%%DistUInt32(0)" => 0.5060353146348979, "Backtrack2_abs%%DistUInt32(2)" => 0.4425060745073244)
+
+Parameter values (trained):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Frequency1_tfun%%DistUInt32(1)_before_sigmoid") => -0.01735692400299519, Var("Backtrack2_app%%DistUInt32(2)_before_sigmoid") => 0.23180327059404457, Var("GenBool1_true%%_before_sigmoid") => 0.0010622898661495424, Var("Frequency1_tbool%%DistUInt32(2)_before_sigmoid") => -0.20028691168078344, Var("Frequency1_tfun%%DistUInt32(2)_before_sigmoid") => 0.18440006148844904, Var("Backtrack1_var%%DistUInt32(0)_before_sigmoid") => -0.024336886013224097, Var("Backtrack2_var%%DistUInt32(1)_before_sigmoid") => -0.007975294225927144, Var("Backtrack2_app%%DistUInt32(3)_before_sigmoid") => 0.2727575655412813, Var("Frequency1_tbool%%DistUInt32(1)_before_sigmoid") => 0.017615900746896167, Var("GenBool2_true%%_before_sigmoid") => 0.023257551032784488, Var("Backtrack1_zero%%DistUInt32(0)_before_sigmoid") => 0.024142431103287718, Var("Backtrack2_app%%DistUInt32(1)_before_sigmoid") => 0.08430749981163514, Var("Backtrack2_abs%%DistUInt32(2)_before_sigmoid") => -0.23099741524372058, Var("Backtrack2_abs%%DistUInt32(3)_before_sigmoid") => -0.3102724609768486, Var("Backtrack2_var%%DistUInt32(3)_before_sigmoid") => -2.0816681711721685e-17, Var("Backtrack2_var%%DistUInt32(2)_before_sigmoid") => -0.025088198777454856, Var("Backtrack2_abs%%DistUInt32(1)_before_sigmoid") => -0.07892346635974043)
+
+Saving samples...
+Saved samples to /space2/tjoa/tuning-output/v58_stlc_bespoke_se/stlc/langbespoke/expr_sz=3-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=200/eq=prob_equals/prop=stlcwelltyped/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/0.03/epochs=10/bound=0.1/terms_trained.txt.
+  3.324103137 seconds
+
+Saved Coq generator to /space2/tjoa/tuning-output/v58_stlc_bespoke_se/stlc/langbespoke/expr_sz=3-typ_sz=2/reinforce_sampling_entropy/freq=2-spb=200/eq=prob_equals/prop=stlcwelltyped/failure_penalty=0.0/forgiveness=0/rand_forgiveness=true/0.03/epochs=10/bound=0.1/trained_Generator.v
+
+
+2024-06-23T16:50:37.791
+Total time elapsed: 4 minutes, 29 seconds, 948 milliseconds
