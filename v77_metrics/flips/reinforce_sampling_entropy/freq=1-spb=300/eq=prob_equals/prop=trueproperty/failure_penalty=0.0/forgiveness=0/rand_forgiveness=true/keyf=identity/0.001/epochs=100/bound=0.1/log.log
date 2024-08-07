@@ -1,0 +1,31 @@
+2024-08-02T15:02:16.745 4d47afd8 ["Flips{3}()", "Pair{SamplingEntropy{Bools{3}},Float64}[SamplingEntropy{Bools{3}}(1,300,TrueProperty{Bools{3}}(),:prob_equals,0.0,0,true,:identity)=>0.001]", "100", "0.1"]
+== Config ==
+TAG: v77_metrics
+Flips{3}()
+Pair{SamplingEntropy{Bools{3}}, Float64}[SamplingEntropy{Bools{3}}(1, 300, TrueProperty{Bools{3}}(), :prob_equals, 0.0, 0, true, :identity) => 0.001]
+Epochs: 100
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  0.013142493 seconds
+
+ADNodes of interest (initial):
+Dict("f1" => 0.8236475079774124, "f2" => 0.9103565379264364, "f3" => 0.16456579813368521)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("f1_before_sigmoid") => 1.5412578691042071, Var("f2_before_sigmoid") => 2.317996052537666, Var("f3_before_sigmoid") => -1.6246411130457412)
+
+Default generation_params_emit_stats
+
+
+ADNodes of interest (trained):
+Dict("f1" => 0.8203507537353922, "f2" => 0.8982491131588883, "f3" => 0.16772319907496358)
+
+Parameter values (trained):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("f1_before_sigmoid") => 1.518725679283988, Var("f2_before_sigmoid") => 2.1779198985264974, Var("f3_before_sigmoid") => -1.6018500828871658)
+
+Default generation_params_emit_stats
+
+

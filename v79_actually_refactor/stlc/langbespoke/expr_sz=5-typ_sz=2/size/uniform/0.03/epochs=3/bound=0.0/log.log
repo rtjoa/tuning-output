@@ -1,0 +1,13 @@
+2024-08-03T23:19:06.072 a5dc544a ["-f", "LangBespokeSTLCGenerator(5,2)", "Pair{MLELossConfig{STLC},Float64}[MLELossConfig{STLC}(size,Uniform())=>0.03]", "3", "0.0"]
+== Config ==
+TAG: v79_actually_refactor
+LangBespokeSTLCGenerator(5, 2)
+Pair{MLELossConfig{STLC}, Float64}[MLELossConfig{STLC}(size, Uniform()) => 0.03]
+Epochs: 3
+Bound: 0.0
+SEED: 0
+
+Building generation computation graph...
+  36.516457281 seconds
+
+Building computation graph for MLELossConfig{STLC}(size, Uniform())...

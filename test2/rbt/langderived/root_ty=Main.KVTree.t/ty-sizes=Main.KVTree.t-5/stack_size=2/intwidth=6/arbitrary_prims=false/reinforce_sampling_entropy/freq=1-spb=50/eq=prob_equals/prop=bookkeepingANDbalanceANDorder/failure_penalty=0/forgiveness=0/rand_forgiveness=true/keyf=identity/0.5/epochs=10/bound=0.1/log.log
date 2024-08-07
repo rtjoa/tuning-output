@@ -1,0 +1,11 @@
+2024-07-22T11:29:49.055 e477b7d8 ["-f", "LangDerivedGenerator{RBT}(Main.KVTree.t,Pair{Type,Integer}[Main.KVTree.t=>5],2,6,false)", "Pair{SamplingEntropy{RBT},Float64}[SamplingEntropy{RBT}(1,50,MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(),BalanceInvariant(),OrderInvariant()]),:prob_equals,0,0,true,:identity)=>0.5]", "10", "0.1"]
+== Config ==
+TAG: test2
+LangDerivedGenerator{RBT}(Main.KVTree.t, Pair{Type, Integer}[Main.KVTree.t => 5], 2, 6, false)
+Pair{SamplingEntropy{RBT}, Float64}[SamplingEntropy{RBT}(1, 50, MultipleInvariants{RBT}(Property{RBT}[BookkeepingInvariant(), BalanceInvariant(), OrderInvariant()]), :prob_equals, 0, 0, true, :identity) => 0.5]
+Epochs: 10
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...

@@ -1,0 +1,14 @@
+2024-08-02T15:48:43.393 63a73fef ["LangBespokeSTLCGenerator(5,2)", "Pair{MLELossConfig{STLC},Float64}[MLELossConfig{STLC}(TermSize(),Uniform())=>0.03]", "2000", "0.1"]
+== Config ==
+TAG: v77_metrics
+LangBespokeSTLCGenerator(5, 2)
+Pair{MLELossConfig{STLC}, Float64}[MLELossConfig{STLC}(TermSize(), Uniform()) => 0.03]
+Epochs: 2000
+Bound: 0.1
+DistNat: DistUInt32
+SEED: 0
+
+Building generation computation graph...
+  37.59581683 seconds
+
+Building computation graph for MLELossConfig{STLC}(TermSize(), Uniform())...
