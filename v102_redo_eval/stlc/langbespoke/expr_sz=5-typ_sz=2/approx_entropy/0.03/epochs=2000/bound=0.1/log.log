@@ -1,0 +1,35 @@
+2024-11-24T09:44:27.247 a912bc6d ["-f", "LangBespokeSTLCGenerator(5,2)", "[ApproxSTLCConstructorEntropy()=>0.03]", "2000", "0.1"]
+== Config ==
+TAG: v102_redo_eval
+LangBespokeSTLCGenerator(5, 2)
+[ApproxSTLCConstructorEntropy() => 0.03]
+Epochs: 2000
+Bound: 0.1
+SEED: 0
+
+Building generation computation graph...
+  31.628540366 seconds
+
+Building computation graph for ApproxSTLCConstructorEntropy()...
+  69.600334215 seconds
+
+ADNodes of interest (initial):
+Dict("Frequency1_tfun%%2" => 0.5, "Backtrack2_abs%%1" => 0.5, "Backtrack2_app%%3" => 0.5, "Backtrack2_abs%%5" => 0.5, "Backtrack1_zero%%0" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack2_app%%1" => 0.5, "Backtrack2_var%%2" => 0.5, "Backtrack2_abs%%4" => 0.5, "Frequency1_tfun%%1" => 0.5, "Frequency1_tbool%%1" => 0.5, "Backtrack2_app%%2" => 0.5, "Backtrack1_var%%0" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_var%%3" => 0.5, "Backtrack2_app%%4" => 0.5, "Backtrack2_app%%5" => 0.5, "Backtrack2_var%%5" => 0.5, "Backtrack2_abs%%3" => 0.5, "Frequency1_tbool%%2" => 0.5, "Backtrack2_abs%%2" => 0.5, "Backtrack2_var%%4" => 0.5, "Backtrack2_var%%1" => 0.5)
+
+Parameter values (initial):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_abs%%2_before_sigmoid") => 0, Var("Backtrack1_zero%%0_before_sigmoid") => 0, Var("Backtrack2_app%%1_before_sigmoid") => 0, Var("Backtrack2_app%%4_before_sigmoid") => 0, Var("Backtrack2_app%%5_before_sigmoid") => 0, Var("Backtrack2_abs%%4_before_sigmoid") => 0, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Backtrack1_var%%0_before_sigmoid") => 0, Var("Backtrack2_var%%3_before_sigmoid") => 0, Var("Backtrack2_var%%1_before_sigmoid") => 0, Var("Frequency1_tfun%%1_before_sigmoid") => 0, Var("Backtrack2_var%%2_before_sigmoid") => 0, Var("Backtrack2_abs%%5_before_sigmoid") => 0, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Backtrack2_abs%%3_before_sigmoid") => 0, Var("Frequency1_tbool%%1_before_sigmoid") => 0, Var("Backtrack2_abs%%1_before_sigmoid") => 0, Var("Backtrack2_app%%2_before_sigmoid") => 0, Var("Frequency1_tbool%%2_before_sigmoid") => 0, Var("Frequency1_tfun%%2_before_sigmoid") => 0, Var("Backtrack2_app%%3_before_sigmoid") => 0, Var("Backtrack2_var%%4_before_sigmoid") => 0, Var("Backtrack2_var%%5_before_sigmoid") => 0)
+
+Saved Coq generator to ../tuning-output/v102_redo_eval/stlc/langbespoke/expr_sz=5-typ_sz=2/approx_entropy/0.03/epochs=2000/bound=0.1/initial_Generator.v
+
+
+ADNodes of interest (trained):
+Dict("Frequency1_tfun%%2" => 0.5, "Backtrack2_abs%%1" => 0.6354557669984211, "Backtrack2_app%%3" => 0.3178073678430793, "Backtrack2_abs%%5" => 0.6354557669984211, "Backtrack1_zero%%0" => 0.5, "GenBool2_true%%" => 0.5, "Backtrack2_app%%1" => 0.3178073678430793, "Backtrack2_var%%2" => 0.5, "Backtrack2_abs%%4" => 0.6354557669984211, "Frequency1_tfun%%1" => 0.5, "Frequency1_tbool%%1" => 0.5, "Backtrack2_app%%2" => 0.3178073678430793, "Backtrack1_var%%0" => 0.5, "GenBool1_true%%" => 0.5, "Backtrack2_var%%3" => 0.5, "Backtrack2_app%%4" => 0.3178073678430793, "Backtrack2_app%%5" => 0.3178073678430793, "Backtrack2_var%%5" => 0.5, "Backtrack2_abs%%3" => 0.6354557669984211, "Frequency1_tbool%%2" => 0.5, "Backtrack2_abs%%2" => 0.6354557669984211, "Backtrack2_var%%4" => 0.5, "Backtrack2_var%%1" => 0.5)
+
+Parameter values (trained):
+Dict{Var, Union{Real, AbstractMatrix{<:Real}}}(Var("Backtrack2_abs%%2_before_sigmoid") => 0.5556945881146063, Var("Backtrack1_zero%%0_before_sigmoid") => 0, Var("Backtrack2_app%%1_before_sigmoid") => -0.7638666320716412, Var("Backtrack2_app%%4_before_sigmoid") => -0.7638666320716412, Var("Backtrack2_app%%5_before_sigmoid") => -0.7638666320716412, Var("Backtrack2_abs%%4_before_sigmoid") => 0.5556945881146063, Var("GenBool1_true%%_before_sigmoid") => 0, Var("Backtrack1_var%%0_before_sigmoid") => 0, Var("Backtrack2_var%%3_before_sigmoid") => -2.7195580958375414e-18, Var("Backtrack2_var%%1_before_sigmoid") => -2.7195580958375414e-18, Var("Frequency1_tfun%%1_before_sigmoid") => 0, Var("Backtrack2_var%%2_before_sigmoid") => -2.7195580958375414e-18, Var("Backtrack2_abs%%5_before_sigmoid") => 0.5556945881146063, Var("GenBool2_true%%_before_sigmoid") => 0, Var("Backtrack2_abs%%3_before_sigmoid") => 0.5556945881146063, Var("Frequency1_tbool%%1_before_sigmoid") => 0, Var("Backtrack2_abs%%1_before_sigmoid") => 0.5556945881146063, Var("Backtrack2_app%%2_before_sigmoid") => -0.7638666320716412, Var("Frequency1_tbool%%2_before_sigmoid") => 0.0, Var("Frequency1_tfun%%2_before_sigmoid") => 0.0, Var("Backtrack2_app%%3_before_sigmoid") => -0.7638666320716412, Var("Backtrack2_var%%4_before_sigmoid") => -2.7195580958375414e-18, Var("Backtrack2_var%%5_before_sigmoid") => -2.7195580958375414e-18)
+
+Saved Coq generator to ../tuning-output/v102_redo_eval/stlc/langbespoke/expr_sz=5-typ_sz=2/approx_entropy/0.03/epochs=2000/bound=0.1/trained_Generator.v
+
+
+2024-11-24T09:46:56.618
+Total time elapsed: 2 minutes, 29 seconds, 371 milliseconds
